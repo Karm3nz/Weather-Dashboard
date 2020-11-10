@@ -75,9 +75,16 @@ $(document).ready(function () {
     }
     // FIVE DAY FORECAST
     function fiveDayForecast() {
-        var five_day_forecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + ",us&APPID=" + appID;
+        var five_day_forecast = 
+        "https://api.openweathermap.org/data/2.5/forecast?q=" + 
+        city + 
+        ",us&APPID=" + 
+        appID;
        
         var day_counter = 1;
+        
+        var latitude;
+        var longitude;
 
         $.ajax({
             url: five_day_forecast,
@@ -100,8 +107,8 @@ $(document).ready(function () {
                     $("#day-" + day_counter).children(".weather-temp").text("Temp: " + ((response.list[i].main.temp - 273.15)).toFixed(2) + "°C");
                     $("#day-" + day_counter).children(".weather-humidity").text("Humidity: " + response.list[i].main.humidity + "%");
                     day_counter++;
-                    
                 }
+            
             }
         })    
     }
@@ -161,3 +168,25 @@ $(document).ready(function () {
 // var cityNameEl = $(".cityName");
 // var currentDateEl = $(".currentDate");
 // var weatherIconEl = $(".weatherIcon");
+
+
+ //if (time === "12:00:00") {}
+//  latitude= response.list[i].city.coord.lat;
+//  longitude= response.list[i].city.coord.lat;
+
+//  console.log(response.list[i].city.coord.lat);
+ 
+//  var uvIndex= "https://api.openweathermap.org/data/2.5/uvi/forecast?&units=imperial&appid=c34ed4f93110fb4830dbbf24ac66f65d&q=" +
+//  "&lat=" +
+//  latitude +
+//  "&lon=" +
+//  longitude;
+
+//  $.ajax({
+//      url: uvIndex,
+//      method: 'GET'
+//  })
+//  .then( function (uvData) {
+//      $("#uvIndex").text("UV Index:" + uvData.value);
+//      console.log(uvData);
+//  })
