@@ -1,0 +1,50 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* HEADER */
+header {
+    top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width:100%;
+    background-color: rgb(49, 49, 49);
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+/* Container */
+.row {
+    margin: 20px;
+}
+
+
+/* SIDEBAR */
+
+h4 {
+    margin: 10px;
+}
+.input-group {
+    margin: 10px;
+}
+.list-group {
+    margin: 10px;
+}
+
+.clear-history {
+    text-align: center;
+}
+
+/* Main Content */
+/* Current Weather*/
+.current-weather {
+    border: 1px solid grey;
+}
+
+/* 5-Day Forecast */
+h3 {
+    width: 100%;
+    margin: 10px;
+    
+}
