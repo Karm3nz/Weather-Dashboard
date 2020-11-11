@@ -82,15 +82,12 @@ $(document).ready(function () {
         appID;
        
         var day_counter = 1;
-        
-        var latitude;
-        var longitude;
 
         $.ajax({
             url: five_day_forecast,
             method: "GET"
         })
-        .then(function (response) {
+        .then(function(response) {
 
             for (var i = 0; i < response.list.length; i++) {
                 //Going through the list of response, inserting the data to the corresponding ids and class
@@ -108,10 +105,24 @@ $(document).ready(function () {
                     $("#day-" + day_counter).children(".weather-humidity").text("Humidity: " + response.list[i].main.humidity + "%");
                     day_counter++;
                 }
-            
+          
             }
+            UVIndex(response.city.coord.lon,response.city.coord.lat);
         })    
     }
+    // UV INDEX
+    function UVIndex(ln,lt){
+        //lets build the url for uvindex.
+        var uvIndexURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ appID+"&lat="+lt+"&lon="+ln;
+        $.ajax({
+            url:uvIndexURL,
+            method:"GET"
+        })
+        .then(function(response){
+            $("#uvIndex").html(response.value);
+        });
+    }
+
     //SEARCH HISTORY
     function displaySearchHistory() {
 

@@ -45,6 +45,7 @@ From here the user will see current weather data as well as weather forecast of 
 References:
 https://github.com/Cassquatch/Weather-Dashboard
 https://github.com/dhens/Weather-Dashboard/blob/master/index.html
+https://github.com/sahiljanbandhu/Weather-Dashboard
 
 Open Weather API:
 https://openweathermap.org/forecast5
