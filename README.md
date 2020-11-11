@@ -28,15 +28,15 @@ In this project I had difficulties with adding the UV index to the project. I wi
 
 ## Usage 
 
-![Weather Dashboard Home Screenshot](weather_dashboard_homePage.png)
+![Weather Dashboard Home Screenshot](weather_dashboard_home_Page.png)
 
 On display of the home page of the weather dashboard web application, the user can click the city search input bar to type in desired city to retreive weather forecast. Once the city is typed in, the user can proceed to click the search button.
 
-![Weather Dashboard City Search](weather_dashboard_citySearch.png)
+![Weather Dashboard City Search](weather_dashboard_city_Search.png)
 
 From here the user will see current weather data as well as weather forecast of said city for the following 5 days. User from here can choose to search for other desired cities, come back to the page at a later time to see saved search, click on another saved city in the search history to view weather forecast, or clear search the city history.
 
-![Weather Dashboard City Search](weather_dashboard_citySearches.png)
+![Weather Dashboard City Search](weather_dashboard_city_Searches.png)
 
 ## Credits
 
