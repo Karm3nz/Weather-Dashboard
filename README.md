@@ -4,9 +4,9 @@
 
 From personal use, to business use, to educational use, a productive day starts with a plan. Part of planning your days, starts with planning for whatever weather comes our way for the week ahead, and that, starts with looking at the weather forecast! 
 
-Features of the weather dashboard includes: searching weather forecast based on user's chosen city, displaying city's current weather data (temperature, humidity, windspeed, weather icon) front and centre of the page, weather forecast data for the following 5 days (weather icon, temperature, humidity), option to save user's city search to local storage, and clearing saved city searches.
+Features of the weather dashboard includes: searching weather forecast based on user's chosen city, displaying city's current weather data (temperature, humidity, windspeed, weather icon, UV index) front and centre of the page, weather forecast data for the following 5 days (weather icon, temperature, humidity), option to save user's city search to local storage, and clearing saved city searches.
 
-In this project I had difficulties with adding the UV index to the project. I will continue to look for other solutions/methods to add the weather data onto the current weather box. 
+In this project I had difficulties with adding the UV index to the project. After many trial errors and looking at other references, I finally got it working!
 
 
 ## Table of Contents
